@@ -60,8 +60,11 @@ class Produto{
             td_id.innerText = this.arrayProdutos[i].id;
             td_nome.innerText = this.arrayProdutos[i].nomeProduto;
             td_preco.innerText = this.arrayProdutos[i].precoProduto;
-            let imagem = document.createElement('img')
-            imagem.src = 'delete.png'
+            let imagem = document.createElement('img');
+            imagem.src = 'https://svgsilh.com/png-512/293989.png';
+            imagem.alt = 'Remover';
+            imagem.width = 20;
+            imagem.height = 20;
             imagem.setAttribute("onclick", "produto.Deletar("+this.arrayProdutos[i].id+")")
             td_del.appendChild(imagem)
         }
