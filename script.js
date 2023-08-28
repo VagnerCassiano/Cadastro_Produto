@@ -61,7 +61,7 @@ class Produto{
             td_nome.innerText = this.arrayProdutos[i].nomeProduto;
             td_preco.innerText = this.arrayProdutos[i].precoProduto;
             let imagem = document.createElement('img')
-            imagem.src = 'del.png'
+            imagem.src = 'delete.png'
             imagem.setAttribute("onclick", "produto.Deletar("+this.arrayProdutos[i].id+")")
             td_del.appendChild(imagem)
         }
